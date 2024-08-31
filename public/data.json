@@ -7,7 +7,7 @@
     "author": "Hamza Sohail",
     "posted_date": "September 15, 2023",
     "reading_time": 5,
-    "hashtags": ["beginners", "es6"]
+    "hashtags": ["#beginners", "#es6"]
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "author": "Sajal Ali",
     "posted_date": "August 28, 2023",
     "reading_time": 4,
-    "hashtags": ["javascript", "coding", "dev"]
+    "hashtags": ["#javascript", "#coding", "#dev"]
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "author": "Feroze Khan",
     "posted_date": "July 10, 2023",
     "reading_time": 10,
-    "hashtags": ["mid_level", "react"]
+    "hashtags": ["#mid_level", "#react"]
   },
   {
     "id": 4,
@@ -37,6 +37,6 @@
     "author": "Anmol Baloch",
     "posted_date": "June 5, 2023",
     "reading_time": 9,
-    "hashtags": ["development", "resources"]
+    "hashtags": ["#development", "#resources"]
   }
 ]

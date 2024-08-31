@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-export default function Blog({ blog }) {
+import { BsBookmarkStarFill } from "react-icons/bs";
+export default function Blog({ blog, onHandle, onTotalTime }) {
   const {
     title,
     cover,
@@ -21,7 +22,13 @@ export default function Blog({ blog }) {
               <span>{posted_date}</span>
             </div>
           </div>
-          <p>{reading_time}min read</p>
+
+          <div className="flex items-center">
+            <p>{reading_time}min read</p>
+            <button onClick={() => onHandle(blog)}>
+              <BsBookmarkStarFill className="ml-4 text-2xl text-blue-600" />
+            </button>
+          </div>
         </div>
         <h2 className="text-3xl font-bold">{title}</h2>
         <div className="flex gap-6">
@@ -29,9 +36,14 @@ export default function Blog({ blog }) {
             <span key={idx}>{m}</span>
           ))}
         </div>
-        <a className="text-blue-700 underline mb-4" href="">
+        <button
+          onClick={() => onTotalTime(reading_time)}
+          className="text-blue-700 bg-blue-400 p-6 rounded-lg underline mb-4"
+        >
           Mark as Read
-        </a>
+        </button>
+        <hr />
+        <br />
       </div>
     </>
   );

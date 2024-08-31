@@ -10,7 +10,7 @@ export default function Blogs() {
   }, []);
   return (
     <>
-      <div className="w-2/3 flex ">
+      <div className="w-2/3 mt-10">
         {blogs.map((blog) => (
           <Blog key={blog.id} blog={blog} />
         ))}
